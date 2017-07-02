@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Intents</string>
+    <string name="link">abrir link</string>
+    <string name="llamada">hacer llamada</string>
+    <string name="abrirSV">Abrir StrretView</string>
+    <string name="escogerApp">Escoger App</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="usuario">usuario</string>
+    <string name="ir">ir</string>
+    <string name="us">user</string>
+
+</resources>
