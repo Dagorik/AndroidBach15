@@ -1,1 +1,1 @@
-include ':app', ':calculadora', ':intents'
+include ':app', ':calculadora', ':intents', ':fragments', ':animationsprojects'
