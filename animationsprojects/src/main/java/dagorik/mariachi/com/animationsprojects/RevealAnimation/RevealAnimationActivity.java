@@ -40,7 +40,7 @@ public class RevealAnimationActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        revealLayout.post(startReveal());
+        
     }
 
     private void startReveal(){
