@@ -18,6 +18,8 @@ public class User extends RealmObject{
 
     private boolean option;
 
+    private int edad;
+
     public int getId(){
         return id;
     }
@@ -48,5 +50,13 @@ public class User extends RealmObject{
 
     public void setOption(boolean option) {
         this.option = option;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
 }

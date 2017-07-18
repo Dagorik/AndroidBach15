@@ -33,12 +33,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void realmTareas(){
-        realmServices.insertUser(1,"Edwin","edwin@devf.com",false);
+        realmServices.insertUser(4,"Sergio","sergio@devf.com",false,21);
 
         RealmResults<User> listUsers = realmServices.obtenerUsuarios();
         for (int i = 0; i<listUsers.size();i++){
             Log.e("MyLogFor",listUsers.get(i).getEmail());
         }
+
+
+        RealmResults<User> users = realmServices.busquedaPorEdad();
+        Log.e("MyLogEdad",users+"");
+
 //        Log.e("MyLog",listUsers+"");
 
         //User user = realmServices.obtenerUsuarioId(2);
@@ -51,9 +56,9 @@ public class MainActivity extends AppCompatActivity {
         //realmServices.borrarUser(1);
 
         //realmServices.insertarCurso(1,"Cinta Negra Android");
-        RealmResults<Curso> cursoRealmResults = realmServices.obtenerCursos();
-        Log.e("MyLogCursos",cursoRealmResults+"");
-        Log.e("MyLogFor",cursoRealmResults.get(0).getUsers().get(0).getEmail());
+//        RealmResults<Curso> cursoRealmResults = realmServices.obtenerCursos();
+//        Log.e("MyLogCursos",cursoRealmResults+"");
+//        Log.e("MyLogFor",cursoRealmResults.get(0).getUsers().get(0).getEmail());
 //        for (int i = 0; i < cursoRealmResults.size(); i++){
 //            Log.e("MyLogFor",cursoRealmResults.get(0).getUsers().get(1).getEmail());
 //        }

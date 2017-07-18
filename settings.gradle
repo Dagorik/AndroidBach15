@@ -1,1 +1,1 @@
-include ':app', ':calculadora', ':intents', ':fragments', ':animationsprojects', ':realmdatabase'
+include ':app', ':calculadora', ':intents', ':fragments', ':animationsprojects', ':realmdatabase', ':recyclerview'

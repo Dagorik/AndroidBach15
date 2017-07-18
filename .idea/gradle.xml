@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/fragments" />
             <option value="$PROJECT_DIR$/intents" />
             <option value="$PROJECT_DIR$/realmdatabase" />
+            <option value="$PROJECT_DIR$/recyclerview" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
