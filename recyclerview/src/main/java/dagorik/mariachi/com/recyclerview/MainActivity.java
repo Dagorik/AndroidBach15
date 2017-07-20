@@ -2,6 +2,7 @@ package dagorik.mariachi.com.recyclerview;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
@@ -49,10 +50,10 @@ public class MainActivity extends AppCompatActivity {
     private void inicializaAdaptador(){
         listaPesos = (RecyclerView) findViewById(R.id.rv_lista);
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        GridLayoutManager layoutManager = new GridLayoutManager(this,2);
+        layoutManager.setOrientation(GridLayoutManager.VERTICAL);
         listaPesos.setLayoutManager(layoutManager);
-
+        listaPesos.setHasFixedSize(true);
         pesoAdaptador = new PesoAdaptador(pesos);
         listaPesos.setAdapter(pesoAdaptador);
 

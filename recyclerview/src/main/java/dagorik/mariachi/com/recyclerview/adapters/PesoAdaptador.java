@@ -60,14 +60,13 @@ public class PesoAdaptador extends RecyclerView.Adapter<PesoAdaptador.PesoViewHo
 
         @Override
         public void onClick(View v) {
-            Log.e("MyLog","click");
             Context context = v.getContext();
             int position = getAdapterPosition();
             Peso peso = pesoList.get(position);
             Intent intent = new Intent(v.getContext(), DescripcionActivity.class);
             intent.putExtra("PESO", peso.getPeso());
-            intent.putExtra("FECHA", peso.getFecha());
             context.startActivity(intent);
         }
     }
 }
+

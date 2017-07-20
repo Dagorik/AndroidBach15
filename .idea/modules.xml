@@ -9,6 +9,8 @@
       <module fileurl="file://$PROJECT_DIR$/intents/intents.iml" filepath="$PROJECT_DIR$/intents/intents.iml" />
       <module fileurl="file://$PROJECT_DIR$/realmdatabase/realmdatabase.iml" filepath="$PROJECT_DIR$/realmdatabase/realmdatabase.iml" />
       <module fileurl="file://$PROJECT_DIR$/recyclerview/recyclerview.iml" filepath="$PROJECT_DIR$/recyclerview/recyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/retrofitexample/retrofitexample.iml" filepath="$PROJECT_DIR$/retrofitexample/retrofitexample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/retrofitexamplemodels/retrofitexamplemodels.iml" filepath="$PROJECT_DIR$/retrofitexamplemodels/retrofitexamplemodels.iml" />
       <module fileurl="file://$PROJECT_DIR$/theFirstDay.iml" filepath="$PROJECT_DIR$/theFirstDay.iml" />
     </modules>
   </component>
