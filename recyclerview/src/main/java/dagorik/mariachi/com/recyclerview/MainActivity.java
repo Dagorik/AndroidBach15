@@ -52,9 +52,12 @@ public class MainActivity extends AppCompatActivity {
 
         GridLayoutManager layoutManager = new GridLayoutManager(this,2);
         layoutManager.setOrientation(GridLayoutManager.VERTICAL);
+
         listaPesos.setLayoutManager(layoutManager);
         listaPesos.setHasFixedSize(true);
+
         pesoAdaptador = new PesoAdaptador(pesos);
+
         listaPesos.setAdapter(pesoAdaptador);
 
     }
