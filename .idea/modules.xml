@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/animationsprojects/animationsprojects.iml" filepath="$PROJECT_DIR$/animationsprojects/animationsprojects.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autocompleteplaces/autocompleteplaces.iml" filepath="$PROJECT_DIR$/autocompleteplaces/autocompleteplaces.iml" />
       <module fileurl="file://$PROJECT_DIR$/calculadora/calculadora.iml" filepath="$PROJECT_DIR$/calculadora/calculadora.iml" />
       <module fileurl="file://$PROJECT_DIR$/fragments/fragments.iml" filepath="$PROJECT_DIR$/fragments/fragments.iml" />
       <module fileurl="file://$PROJECT_DIR$/intents/intents.iml" filepath="$PROJECT_DIR$/intents/intents.iml" />
@@ -12,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/retrofitexample/retrofitexample.iml" filepath="$PROJECT_DIR$/retrofitexample/retrofitexample.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrofitexamplemodels/retrofitexamplemodels.iml" filepath="$PROJECT_DIR$/retrofitexamplemodels/retrofitexamplemodels.iml" />
       <module fileurl="file://$PROJECT_DIR$/theFirstDay.iml" filepath="$PROJECT_DIR$/theFirstDay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/toolbar/toolbar.iml" filepath="$PROJECT_DIR$/toolbar/toolbar.iml" />
     </modules>
   </component>
 </project>

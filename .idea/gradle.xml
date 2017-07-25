@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/animationsprojects" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/autocompleteplaces" />
             <option value="$PROJECT_DIR$/calculadora" />
             <option value="$PROJECT_DIR$/fragments" />
             <option value="$PROJECT_DIR$/intents" />
@@ -17,6 +18,7 @@
             <option value="$PROJECT_DIR$/recyclerview" />
             <option value="$PROJECT_DIR$/retrofitexample" />
             <option value="$PROJECT_DIR$/retrofitexamplemodels" />
+            <option value="$PROJECT_DIR$/toolbar" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
