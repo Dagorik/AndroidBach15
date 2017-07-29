@@ -14,6 +14,9 @@ import dagorik.mariachi.com.retrofitexamplemodels.adapter.AdapterEjemplo;
 import dagorik.mariachi.com.retrofitexamplemodels.api.ServiceGenerator;
 import dagorik.mariachi.com.retrofitexamplemodels.api.ServicesInterface;
 import dagorik.mariachi.com.retrofitexamplemodels.models.Ejemplo;
+import dagorik.mariachi.com.retrofitexamplemodels.models.modeloEjemplo.Contactos;
+import dagorik.mariachi.com.retrofitexamplemodels.models.modeloEjemplo.Objeto;
+import dagorik.mariachi.com.retrofitexamplemodels.models.modeloEjemplo.Phone;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -25,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView rvListEjemplo;
     List<Ejemplo> ejemploList = new ArrayList<>();
     AdapterEjemplo adapterEjemplo;
-
+    String nombre;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,10 +36,17 @@ public class MainActivity extends AppCompatActivity {
 
         //loadData();
         loadDataSingleton();
+
+        Objeto objeto = new Objeto();
+        objeto.getContactos().get(1).getPhoner().getMobile();
+
+         nombre = "Brandon";
     }
 
     private void loadDataSingleton() {
         ServicesInterface servicesInterface = ServiceGenerator.createService();
+
+
         servicesInterface.loadData().enqueue(new Callback<List<Ejemplo>>() {
             @Override
             public void onResponse(Call<List<Ejemplo>> call, Response<List<Ejemplo>> response) {
@@ -58,7 +68,39 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
+        Phone phone = new Phone();
+        phone.setMobile(782178931);
+        phone.setTel(982475984);
+
+        Contactos contactos = new Contactos();
+        contactos.setName(nombre);
+        contactos.setId("1");
+        contactos.setPhoner(phone);
+
+
+
+        Objeto objeto = new Objeto();
+
+        objeto.setContactos((List<Contactos>) contactos);
+
+        servicesInterface.pedirObjeto(objeto).enqueue(new Callback<Objeto>() {
+            @Override
+            public void onResponse(Call<Objeto> call, Response<Objeto> response) {
+
+            }
+
+            @Override
+            public void onFailure(Call<Objeto> call, Throwable t) {
+
+            }
+        });
+
+
     }
+
+
 
 
     private void setupRecyler(List<Ejemplo> list){
