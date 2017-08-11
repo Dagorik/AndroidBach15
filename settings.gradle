@@ -1,1 +1,1 @@
-include ':app', ':calculadora', ':intents', ':fragments', ':animationsprojects', ':realmdatabase', ':recyclerview', ':retrofitexample', ':retrofitexamplemodels', ':toolbar', ':autocompleteplaces', ':facebooklogin', ':mvplogin', ':mvpretrofitrxjava'
+include ':app', ':calculadora', ':intents', ':fragments', ':animationsprojects', ':realmdatabase', ':recyclerview', ':retrofitexample', ':retrofitexamplemodels', ':toolbar', ':autocompleteplaces', ':facebooklogin', ':mvplogin', ':mvpretrofitrxjava', ':mvprecycler'
