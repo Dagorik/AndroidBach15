@@ -34,30 +34,33 @@ public class MainActivity extends AppCompatActivity {
 
         loginButton = (LoginButton) findViewById(R.id.login_button);
 
-        loginButton.setReadPermissions(Arrays.asList("email","public_profile","user_photos"));
+        loginButton.setReadPermissions(Arrays.asList("email", "public_profile", "user_photos"));
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
                 AccessToken accessToken = loginResult.getAccessToken();
                 Bundle params = new Bundle();
-                params.putString("fields","id,name,email,last_name,first_name,picture");
-                GraphRequest graphRequest = GraphRequest.newMeRequest(accessToken, new GraphRequest.GraphJSONObjectCallback()
-                {
+                params.putString("fields", "id,name,email,last_name,first_name,picture");
+                GraphRequest graphRequest = GraphRequest.newMeRequest(accessToken, new GraphRequest.GraphJSONObjectCallback() {
                     @Override
                     public void onCompleted(JSONObject object, GraphResponse response) {
-                        Log.e("MyLog",object+"");
+                        Log.e("MyLog", object + "");
 
+                        String name;
                         try {
-                            String name = object.getString("name");
-                            Log.e("MyLogName",name);
+                            name = object.getString("name");
+
+                            Log.e("MyLogName", name);
 
                             Profile profile = Profile.getCurrentProfile();
                             String nameProfile = profile.getFirstName();
-                            String picture = String.valueOf(profile.getProfilePictureUri(300,300));
-                            Log.e("MyLogNameP",picture);
+                            String picture = String.valueOf(profile.getProfilePictureUri(300, 300));
+                            Log.e("MyLogNameP", picture);
+
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
+
                     }
                 });
                 graphRequest.setParameters(params);
@@ -70,12 +73,12 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onCancel() {
-                Log.e("Cancel","Cancel");
+                Log.e("Cancel", "Cancel");
             }
 
             @Override
             public void onError(FacebookException error) {
-                Log.e("Error",error.getMessage());
+                Log.e("Error", error.getMessage());
             }
         });
     }
@@ -83,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        callbackManager.onActivityResult(requestCode,resultCode,data);
+        callbackManager.onActivityResult(requestCode, resultCode, data);
     }
 
     private void goLoginScreen() {

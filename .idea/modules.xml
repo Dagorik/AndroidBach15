@@ -9,6 +9,8 @@
       <module fileurl="file://$PROJECT_DIR$/facebooklogin/facebooklogin.iml" filepath="$PROJECT_DIR$/facebooklogin/facebooklogin.iml" />
       <module fileurl="file://$PROJECT_DIR$/fragments/fragments.iml" filepath="$PROJECT_DIR$/fragments/fragments.iml" />
       <module fileurl="file://$PROJECT_DIR$/intents/intents.iml" filepath="$PROJECT_DIR$/intents/intents.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvplogin/mvplogin.iml" filepath="$PROJECT_DIR$/mvplogin/mvplogin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvpretrofitrxjava/mvpretrofitrxjava.iml" filepath="$PROJECT_DIR$/mvpretrofitrxjava/mvpretrofitrxjava.iml" />
       <module fileurl="file://$PROJECT_DIR$/realmdatabase/realmdatabase.iml" filepath="$PROJECT_DIR$/realmdatabase/realmdatabase.iml" />
       <module fileurl="file://$PROJECT_DIR$/recyclerview/recyclerview.iml" filepath="$PROJECT_DIR$/recyclerview/recyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrofitexample/retrofitexample.iml" filepath="$PROJECT_DIR$/retrofitexample/retrofitexample.iml" />
