@@ -41,6 +41,23 @@ public class MainActivity extends AppCompatActivity {
         objeto.getContactos().get(1).getPhoner().getMobile();
 
          nombre = "Brandon";
+
+
+        Ejemplo ejemplo = new Ejemplo();
+        ejemplo.setId("1");
+        ejemplo.setComment("lakdsflkasdfj");
+        ejemplo.setPicture("www.image.com");
+
+        System.out.println(ejemplo.toString());
+
+
+        Ejemplo ejemplo1 = new Ejemplo();
+        ejemplo.setId("2");
+        ejemplo.setComment("asdfasdfas");
+        ejemplo.setPicture("www.image.com/logo");
+
+        System.out.println(ejemplo1.toString());
+
     }
 
     private void loadDataSingleton() {

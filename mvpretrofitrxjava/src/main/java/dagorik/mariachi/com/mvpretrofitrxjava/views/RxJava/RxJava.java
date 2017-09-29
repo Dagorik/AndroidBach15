@@ -20,7 +20,7 @@ public class RxJava {
                 .subscribe(System.out::println);
 
 
-        loadNumber().map(numero -> numero + " ").subscribe(System.out::print);
+        //loadNumber().map(numero -> numero + " ").subscribe(System.out::print);
 
 
     }

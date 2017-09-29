@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         RealmConfiguration realmConfiguration = new RealmConfiguration.Builder()
                 .name("Test") //Nombre de la base de datos
-                .schemaVersion(1) //Numero de version de la base de datos
+                .schemaVersion(1) //Número de version de la base de datos
                 .deleteRealmIfMigrationNeeded()
                 .build(); //Construye con las configuraciones establecidas
 

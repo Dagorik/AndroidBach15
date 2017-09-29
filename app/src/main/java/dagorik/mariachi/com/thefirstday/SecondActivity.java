@@ -17,5 +17,7 @@ public class SecondActivity extends AppCompatActivity {
 
         Log.e("MyLogDouble",var + "");
 
+
+
     }
 }
