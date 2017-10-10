@@ -87,5 +87,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button3"
         android:onClick="slide"
-        android:text="slide" />
+        android:text="slide"
+        android:layout_alignBottom="@+id/button5" />
 </RelativeLayout>

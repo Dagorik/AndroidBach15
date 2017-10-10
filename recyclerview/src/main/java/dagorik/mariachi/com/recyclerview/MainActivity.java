@@ -27,31 +27,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initPeso() {
-        pesos.add(new Peso("01/01/2018","78"));
-        pesos.add(new Peso("02/01/2018","79"));
-        pesos.add(new Peso("03/01/2018","72"));
-        pesos.add(new Peso("04/01/2018","72"));
-        pesos.add(new Peso("05/01/2018","74"));
-        pesos.add(new Peso("06/01/2018","72"));
-        pesos.add(new Peso("07/01/2018","73"));
-        pesos.add(new Peso("08/01/2018","71"));
-        pesos.add(new Peso("09/01/2018","75"));
-        pesos.add(new Peso("01/01/2018","78"));
-        pesos.add(new Peso("02/01/2018","79"));
-        pesos.add(new Peso("03/01/2018","72"));
-        pesos.add(new Peso("04/01/2018","73"));
-        pesos.add(new Peso("05/01/2018","74"));
-        pesos.add(new Peso("06/01/2018","72"));
-        pesos.add(new Peso("07/01/2018","73"));
-        pesos.add(new Peso("08/01/2018","71"));
-        pesos.add(new Peso("09/01/2018","75"));
+        pesos.add(new Peso("01/01/2018","78 Kg"));
+        pesos.add(new Peso("02/01/2018","79 Kg"));
+        pesos.add(new Peso("03/01/2018","72 Kg"));
+        pesos.add(new Peso("04/01/2018","72 Kg"));
+        pesos.add(new Peso("05/01/2018","74 Kg"));
+        pesos.add(new Peso("06/01/2018","72 Kg"));
+        pesos.add(new Peso("07/01/2018","73 Kg"));
+        pesos.add(new Peso("08/01/2018","71 Kg"));
+        pesos.add(new Peso("09/01/2018","75 Kg"));
+        pesos.add(new Peso("01/01/2018","78 Kg"));
+        pesos.add(new Peso("02/01/2018","79 Kg"));
+        pesos.add(new Peso("03/01/2018","72 Kg"));
+        pesos.add(new Peso("04/01/2018","73 Kg"));
+        pesos.add(new Peso("05/01/2018","74 Kg"));
+        pesos.add(new Peso("06/01/2018","72 Kg"));
+        pesos.add(new Peso("07/01/2018","73 Kg"));
+        pesos.add(new Peso("08/01/2018","71 Kg"));
+        pesos.add(new Peso("09/01/2018","75 Kg"));
     }
 
     private void inicializaAdaptador(){
         listaPesos = (RecyclerView) findViewById(R.id.rv_lista);
 
-        GridLayoutManager layoutManager = new GridLayoutManager(this,2);
-        layoutManager.setOrientation(GridLayoutManager.VERTICAL);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
         listaPesos.setLayoutManager(layoutManager);
         listaPesos.setHasFixedSize(true);
